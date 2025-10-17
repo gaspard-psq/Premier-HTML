@@ -100,16 +100,64 @@ h1 {
 --------------------------------*/
 @keyframes floatImage {
   0% {
-    transform: translateY(0); /* position initiale */
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px); /* monte de 15px */
+    transform: translateY(-15px);
   }
   100% {
-    transform: translateY(0); /* revient à la position initiale */
+    transform: translateY(0);
   }
 }
 
 img {
-  animation: floatImage 3s ease-in-out infinite; /* animation continue */
+  animation: floatImage 3s ease-in-out infinite;
+}
+
+/* ------------------------------
+   Animation du fond des sections
+--------------------------------*/
+@keyframes bgColorChange {
+  0% {
+    background-color: #fff8e6;
+  }
+  25% {
+    background-color: #fbe7c6;
+  }
+  50% {
+    background-color: #ffe6f0;
+  }
+  75% {
+    background-color: #dce6ff;
+  }
+  100% {
+    background-color: #fff8e6;
+  }
+}
+
+#informations-personnelles, #formation, #experience, #compétences, #diplomes, #centres-interet {
+  animation: bgColorChange 10s ease-in-out infinite;
+}
+
+/* 
+   Animation de rotation pour loader
+*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style de la roue de chargement */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #6a0dad;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 2s linear infinite;
 }
