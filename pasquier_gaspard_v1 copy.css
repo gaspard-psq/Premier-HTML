@@ -4,7 +4,12 @@ html {
   background-color: rgb(215, 191, 248);
 }
 
-#informations-personnelles, #formation, #experience, #compétences, #diplomes, #centres-interet {
+#informations-personnelles,
+#formation,
+#experience,
+#compétences,
+#diplomes,
+#centres-interet {
   background-color: #fff8e6;
   border-radius: 15px;
   padding: 15px;
@@ -14,7 +19,7 @@ html {
 }
 
 hr {
-  border-top: 3px solid #000;
+  border-top: 3px solid #000000;
   width: 80%;
 }
 
@@ -50,18 +55,24 @@ a:hover {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-#compétences table th, #compétences table td {
+#compétences th,
+#compétences td {
   border: 2px solid #ccc;
   padding: 8px 12px;
   text-align: left;
 }
-#compétences table th {
+#compétences th {
   background-color: #f2e6ff;
   font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
-  #informations-personnelles, #formation, #experience, #compétences, #diplomes, #centres-interet {
+  #informations-personnelles,
+  #formation,
+  #experience,
+  #compétences,
+  #diplomes,
+  #centres-interet {
     max-width: 90%;
     margin: 20px auto;
     padding: 10px;
@@ -74,4 +85,4 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-}/*# sourceMappingURL=pasquier_gaspard_v1.css.map */
+}/*# sourceMappingURL=pasquier_gaspard_v1 copy.css.map */
