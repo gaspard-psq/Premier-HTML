@@ -1,41 +1,37 @@
-// Variables globales
-$bg-global: rgb(215, 191, 248);
-$bg-section: #fff8e6;
-$border-black: #000000;
+// Variables de couleurs
+$background-global: rgb(215, 191, 248);
+$section-bg: #fff8e6;
+$section-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 $link-color: #6a0dad;
 $link-hover: #9b30ff;
-$table-border: #ccc;
-$table-header: #f2e6ff;
-$box-shadow: rgba(0, 0, 0, 0.1);
+$table-header-bg: #f2e6ff;
+$table-border: 2px solid #ccc;
 
 // Style global
 html {
   text-align: center;
-  background-color: $bg-global;
+  background-color: $background-global;
 }
 
-//Styles pour les sections
-#informations-personnelles,
-#formation,
-#experience,
-#compétences,
-#diplomes,
-#centres-interet {
-  background-color: $bg-section;
+// Styles pour les sections
+$sections: #informations-personnelles, #formation, #experience, #compétences, #diplomes, #centres-interet;
+
+#{$sections} {
+  background-color: $section-bg;
   border-radius: 15px;
   padding: 15px;
   margin: 50px auto;
   max-width: 350px;
-  box-shadow: 0 4px 15px $box-shadow;
+  box-shadow: $section-shadow;
 }
 
-//Ligne horizontale
+// Ligne horizontale avec hr
 hr {
-  border-top: 3px solid $border-black;
+  border-top: 3px solid #000;
   width: 80%;
 }
 
-// Titres
+// Titres de section
 h2 {
   text-decoration: underline;
 }
@@ -51,7 +47,7 @@ ul {
   font-size: 16px;
 }
 
-//Liens avec imbrication
+// Liens hypertexte
 a {
   color: $link-color;
   text-decoration: none;
@@ -62,39 +58,33 @@ a {
   }
 }
 
-//Tableau dans #compétences
+// Tableau compétences
 #compétences {
   table {
     width: 90%;
     margin: 10px auto;
     border-collapse: collapse;
-    background-color: $bg-section;
+    background-color: $section-bg;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px $box-shadow;
-  }
+    box-shadow: $section-shadow;
 
-  th,
-  td {
-    border: 2px solid $table-border;
-    padding: 8px 12px;
-    text-align: left;
-  }
+    th, td {
+      border: $table-border;
+      padding: 8px 12px;
+      text-align: left;
+    }
 
-  th {
-    background-color: $table-header;
-    font-weight: bold;
+    th {
+      background-color: $table-header-bg;
+      font-weight: bold;
+    }
   }
 }
 
-//Interface smartphone
+// Interface pour smartphone
 @media screen and (max-width: 600px) {
-  #informations-personnelles,
-  #formation,
-  #experience,
-  #compétences,
-  #diplomes,
-  #centres-interet {
+  #{$sections} {
     max-width: 90%;
     margin: 20px auto;
     padding: 10px;
@@ -105,10 +95,8 @@ a {
     text-align: left;
   }
 
-  #informations-personnelles {
-    p {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  #informations-personnelles p {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
