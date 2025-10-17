@@ -1,4 +1,4 @@
-// 🎨 Variables globales
+// Variables globales
 $bg-global: rgb(215, 191, 248);
 $bg-section: #fff8e6;
 $border-black: #000000;
@@ -8,7 +8,7 @@ $table-border: #ccc;
 $table-header: #f2e6ff;
 $box-shadow: rgba(0, 0, 0, 0.1);
 
-// 🌍 Style global
+// Style global
 html {
   text-align: center;
   background-color: $bg-global;
@@ -35,12 +35,12 @@ hr {
   width: 80%;
 }
 
-// 🏷️ Titres
+// Titres
 h2 {
   text-decoration: underline;
 }
 
-// ✅ Listes
+// Listes
 ul {
   list-style-type: disc;
   list-style-position: inside;
