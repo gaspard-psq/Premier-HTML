@@ -94,3 +94,22 @@ a:hover {
 h1 {
   animation: fadeIn 2s ease-in-out;
 }
+
+/* ------------------------------
+   Animation pour la photo (img)
+--------------------------------*/
+@keyframes floatImage {
+  0% {
+    transform: translateY(0); /* position initiale */
+  }
+  50% {
+    transform: translateY(-15px); /* monte de 15px */
+  }
+  100% {
+    transform: translateY(0); /* revient à la position initiale */
+  }
+}
+
+img {
+  animation: floatImage 3s ease-in-out infinite; /* animation continue */
+}
