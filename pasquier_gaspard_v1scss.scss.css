@@ -1,0 +1,100 @@
+/* Style global */
+html {
+    text-align: center;
+    background-color: rgb(215, 191, 248);
+}
+
+/* Styles pour les sections */
+#informations-personnelles,
+#formation,
+#experience,
+#compétences,
+#diplomes,
+#centres-interet {
+    background-color: #fff8e6; 
+    border-radius: 15px;
+    padding: 15px;
+    margin: 50px auto;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ligne horizontale avec hr */
+hr {
+    border-top: 3px solid #000000; 
+    width: 80%;
+}
+
+/* Titres de section */
+h2 {
+    text-decoration: underline;
+}
+
+/* Listes */
+ul {
+    list-style-type: disc;
+    list-style-position: inside; 
+    text-align: left;            
+    display: inline-block;       
+    margin: 0 auto;
+    padding: 0;        
+    font-size: 16px;
+}
+
+/* Liens hypertexte */
+a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9b30ff;
+}
+
+/* Tableau compétences */
+#compétences table {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #fff8e6;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#compétences th, #compétences td {
+    border: 2px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+#compétences th {
+    background-color: #f2e6ff;
+    font-weight: bold;
+}
+
+
+/* interface pour smartphone */
+@media screen and (max-width: 600px) {
+    #informations-personnelles,
+    #formation,
+    #experience,
+    #compétences,
+    #diplomes,
+    #centres-interet {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    ul {
+        display: block;
+        text-align: left;
+    }
+
+    #informations-personnelles p {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+}
