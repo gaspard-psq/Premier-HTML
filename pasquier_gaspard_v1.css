@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
   text-align: center;
   background-color: rgb(215, 191, 248);
@@ -74,4 +75,22 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-}/*# sourceMappingURL=pasquier_gaspard_v1.css.map */
+}
+
+/* ------------------------------
+   Animation pour le nom (h1)
+--------------------------------*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
